@@ -11,6 +11,11 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/hello")
 
+# dynamic route
+@app.route("/test")
+def search():
+    return "Hello"
+
 # define the view using a function, which returns a string
 def hello_world():
     return "Hello, World!"
